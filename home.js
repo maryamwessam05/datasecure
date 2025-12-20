@@ -39,3 +39,35 @@ herotxt.innerHTML +=`
     <button>Learn How to Stay Safe</button>
 
 `
+
+
+let statsCards = [
+    {
+        img: "img/1.svg",
+        value: "73%",
+        text: "of users have experienced online fraud attempts"
+    },
+    {
+        img: "img/2.svg",
+        value: "2.5M",
+        text: "bank card details stolen annually worldwide"
+    },
+    {
+        img: "img/3.svg",
+        value: "89%",
+        text: "of scams start with personal information sharing"
+    }
+];
+
+let section = document.querySelector(".sec2");
+
+
+for (let i = 0; i < statsCards.length; i++) {
+    section.innerHTML += `
+        <div class="card">
+            <img src="${statsCards[i].img}" alt="">
+            <h4>${statsCards[i].value}</h4>
+            <p>${statsCards[i].text}</p>
+        </div>
+    `;
+}
