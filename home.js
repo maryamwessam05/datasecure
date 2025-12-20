@@ -109,6 +109,22 @@ for (let i = 0; i < tipsCards.length; i++) {
     `;
 }
 
+let partext = document.querySelector(".text");
+
+partext.innerHTML += `
+Visual resources and educational materials to help you understand cybersecurity threats and how to protect yourself online. These materials break down complex security concepts into simple, easy-to-understand visuals, making it easier to recognize common scams, data breaches, and online risks. By learning how cyber threats work, users can make safer decisions, protect their personal information, and navigate the digital world with greater confidence.
+`
+let sec4tit = document.querySelector(".sec4tit");
+
+sec4tit.innerHTML += `
+Security Awareness Gallery
+`
+
+let readmore = document.querySelector(".readmore");
+
+readmore.innerHTML += `
+Read More
+`
 
 function toggleReadMore() {
     const text = document.querySelector(".text");
@@ -122,3 +138,54 @@ function toggleReadMore() {
         btn.textContent = "Read More";
     }
 }
+
+
+let galleryItems = [
+    { 
+        img: "img/image 2.png", 
+        title: "Digital Protection" },
+    { 
+        img: "img/image 3.png", 
+        title: "Security Awareness" },
+    { 
+        img: "img/image 4.png", 
+        title: "Privacy Protection" },
+    { 
+        img: "img/image 5.png", 
+        title: "Digital Safety" },
+    { 
+        img: "img/image 6.png", 
+        title: "Secure Banking" },
+    { 
+        img: "img/image 7.png",
+        title: "Fraud Prevention" }
+];
+
+let gallery = document.querySelector(".gallery");
+let lightbox = document.querySelector(".lightbox");
+let lightboxImg = document.querySelector(".lightbox-img");
+let closeBtn = document.querySelector(".close");
+
+gallery.innerHTML = "";
+for (let i = 0; i < galleryItems.length; i++) {
+    gallery.innerHTML += `
+        <div class="gall">
+            <img src="${galleryItems[i].img}" alt="${galleryItems[i].title}">
+            <h3>${galleryItems[i].title}</h3>
+        </div>
+    `;
+}
+
+document.querySelectorAll(".gallery .gall img").forEach(img => {
+    img.addEventListener("click", () => {
+        lightboxImg.src = img.src;
+        lightbox.classList.remove("hidden");
+    });
+});
+
+closeBtn.addEventListener("click", () => {
+    lightbox.classList.add("hidden");
+});
+
+
+
