@@ -1,3 +1,37 @@
+:root{
+    --headerfooter : #202020;
+    --logintxt : #f9f8f5;
+    --input: white;
+    --logingreen: #3cab8c;
+    --placeholder: #959595;
+    --glassdark: rgba(255, 255, 255, 0.05);
+    --headlines: white;
+    --btntxt: #202020;
+    --iconoutline: #3cab8c;
+    --buttontog:  transparent;
+    --loginbg :url("img/logobg.svg");
+    --landingbg :url("img/LandingPageBg.svg");
+    --profilebg: url("img/profilebg.svg");
+    --modetoggle: url("img/sun.svg");
+}
+
+.lightmode{
+    --headerfooter : #F9F8F5;
+    --logintxt : #202020;
+    --input: white;
+    --logingreen: #3cab8c;
+    --placeholder: #959595;
+    --glassdark: rgba(255, 255, 255, 0.70);
+    --headlines: #202020;
+    --buttontog:  rgba(60, 171, 140, 0.20);
+    --btntxt: white;
+    --iconoutline: #3cab8c;
+    --loginbg :url("img/loginpagebg.svg");
+    --landingbg :url("img/LandingPageBgLight.svg");
+    --profilebg: url("img/profilebglight.svg");
+    --modetoggle: url("img/moon.svg");
+}
+
 *{
     margin: 0;
     box-sizing: border-box;
@@ -5,19 +39,29 @@
     font-family: "Poppins";
 }
 
-body{
-    background: #F9F8F5;
+.landingpage{
+    background-image: var(--landingbg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     width: 100%;
+    height: 3223.477px;
+    
+
 }
 
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 header{
     display: flex;
 height: 72.8px;
 padding: 16px 40px 0.8px 40px;
 align-items: flex-start;
 align-self: stretch;
-border-bottom: 0.8px solid rgba(0, 0, 0, 0.08);
-background: #FFF;
+background: var(--headerfooter, #202020);
 justify-content: space-between;
 }
 nav{
@@ -38,14 +82,17 @@ a{
 }
 
 li a{
-    color: #2D2D2D;
+color: var(--logintxt, #F9F8F5);
 font-family: Poppins;
 font-size: 16px;
 font-style: normal;
 font-weight: 500;
 line-height: 24px; /* 150% */
 }
+.selectednav{
+   color: var(--logingreen, #3CAB8C) !important;
 
+}
 header button{
 display: flex;
 width: 36px;
@@ -54,10 +101,10 @@ justify-content: center;
 align-items: center;
 flex-shrink: 0;
 border-radius: 8px;
-border: 0.8px solid rgba(0, 0, 0, 0.08);
+border: 0.8px solid rgba(255, 255, 255, 0.10);
 outline: none;
-background-color: #F9F8F5;
-color: #2D2D2D;
+background: var(--buttontog);
+color: var(--logintxt, #F9F8F5);
 text-align: center;
 font-family: Poppins;
 font-size: 16px;
@@ -73,9 +120,9 @@ height: 36px;
 justify-content: center;
 align-items: center;
 flex-shrink: 0;
-border: 0.8px solid rgba(0, 0, 0, 0.08);
+border: 0.8px solid rgba(255, 255, 255, 0.10);
 outline: none;
-background-color: #F9F8F5;
+background: var(--buttontog);
 color: #2D2D2D;
 text-align: center;
 font-family: Poppins;
@@ -83,7 +130,85 @@ font-size: 16px;
 font-style: normal;
 font-weight: 500;
 line-height: 24px; 
-    background-image: url(img/moon.svg);
+    background-image: var(--modetoggle);
     background-position: center;
     background-repeat: no-repeat;
+}
+
+
+.hero{
+    display: flex;
+padding: 84px 139px;
+align-items: center;
+justify-content: center;
+gap: 48px;
+}
+
+.herotxt{
+    display: flex;
+width: 527px;
+flex-direction: column;
+align-items: flex-start;
+gap: 28px;
+}
+
+.herotxt h1{
+    color: var(--headlines, #FFF);
+font-family: Poppins;
+font-size: 48px;
+font-style: normal;
+font-weight: 400;
+line-height: 57.6px; /* 120% */
+}
+
+.herotxt p{
+    color: var(--headlines, #FFF);
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 27px; /* 150% */
+}
+
+.herotxt button{
+    display: inline-flex;
+padding: 12.8px 31.875px 11.2px 32px;
+justify-content: center;
+align-items: center;
+border-radius: 10px;
+background: var(--headlines, #FFF);
+color: var(--btntxt, #202020);
+text-align: center;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 150% */
+cursor: pointer;
+border: 0;
+transition: all 300ms ease;
+}
+
+.herotxt button:hover{
+    scale: 1.1;
+
+}
+
+.heroimg{
+width: 527px;
+height: 328.881px;
+
+}
+
+.heroimg img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.sec2{
+    display: flex;
+padding: 73px 75px;
+align-items: center;
+gap: 32px;
 }
