@@ -71,3 +71,40 @@ for (let i = 0; i < statsCards.length; i++) {
         </div>
     `;
 }
+
+let sec3tit = document.getElementById("sec3title");
+
+sec3tit.innerHTML += `Essential Security Facts`
+
+let tipsCards = [
+    {
+        number: "1",
+        title: "Never Share Your CVV",
+        text: "Your bank will never ask for your card security code via email, text, or phone. Keep this information completely private."
+    },
+    {
+        number: "2",
+        title: "Verify Before Clicking",
+        text: "Always check the sender's email address and hover over links before clicking. Scammers often use similar-looking domains."
+    },
+    {
+        number: "3",
+        title: "Use Strong Passwords",
+        text: "Create unique passwords for each account, combining letters, numbers, and symbols. Never reuse passwords across sites."
+    }
+];
+
+
+
+let cardsContainer = document.querySelector(".cards2");
+
+
+for (let i = 0; i < tipsCards.length; i++) {
+    cardsContainer.innerHTML += `
+        <div class="cardsec3">
+            <h6>${tipsCards[i].number}</h6>
+            <h3>${tipsCards[i].title}</h3>
+            <p>${tipsCards[i].text}</p>
+        </div>
+    `;
+}
