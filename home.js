@@ -108,3 +108,17 @@ for (let i = 0; i < tipsCards.length; i++) {
         </div>
     `;
 }
+
+
+function toggleReadMore() {
+    const text = document.querySelector(".text");
+    const btn = document.querySelector(".readmore");
+
+    text.classList.toggle("expanded");
+
+    if (text.classList.contains("expanded")) {
+        btn.textContent = "Read Less";
+    } else {
+        btn.textContent = "Read More";
+    }
+}
