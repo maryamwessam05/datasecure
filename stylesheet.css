@@ -673,3 +673,128 @@ line-height: 48px; /* 150% */
     transform: scale(1);
   }
 }
+
+
+.loginpage{
+    display: flex;
+width: 100%;
+padding-top: 66px;
+flex-direction: column;
+align-items: center;
+gap: 94px;
+background-image: var(--loginbg);
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.logincard{
+    display: flex;
+padding: 33px;
+width: 488px;
+height: 564px;
+flex-direction: column;
+align-items: center;
+gap: 21px;
+border-radius: 14px;
+background: var(--glassdark, rgba(255, 255, 255, 0.05));
+box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.10), 0 1px 2px -1px rgba(0, 0, 0, 0.10);
+backdrop-filter: blur(2px);
+}
+
+.logincard h2{
+    color: var(--logingreen, #3CAB8C);
+text-align: center;
+font-family: Poppins;
+font-size: 32px;
+font-style: normal;
+font-weight: 400;
+line-height: 48px; /* 150% */
+}
+
+.logincard p{
+    color: var(--logintxt, #F9F8F5);
+text-align: center;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 150% */
+}
+
+.loginform{
+    display: flex;
+width: 422.4px;
+flex-direction: column;
+align-items: flex-start;
+gap: 24px;
+}
+
+.loginform label{
+    color: var(--logintxt, #F9F8F5);
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 150% */
+}
+
+.us{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 8px;
+align-self: stretch;
+}
+
+#username , #password{
+display: flex;
+width: 422.4px;
+height: 49.6px;
+padding: 12px 16px 12px 44px;
+align-items: center;
+border-radius: 10px;
+background: var(--input, #FFF);
+border: 0;
+}
+
+#username{
+        background-image: url(img/Icon1.svg);
+    background-repeat: no-repeat;
+    background-position: 12px center;
+     background-size: 20px 20px;
+}
+
+#password{
+       background-image: url(img/Icon4.svg);
+    background-repeat: no-repeat;
+    background-position: 12px center;
+     background-size: 20px 20px;
+}
+
+#loginbtn{
+    display: flex;
+width: 422.4px;
+padding: 12.8px 0 11.2px 0;
+justify-content: center;
+align-items: center;
+border-radius: 10px;
+background: var(--logingreen, #3CAB8C);
+color: var(--logintxt, #F9F8F5);
+text-align: center;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 150% */
+border: 0;
+}
+
+#forgot{
+    color: var(--logingreen, #3CAB8C);
+text-align: center;
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 21px; /* 150% */
+}

@@ -42,15 +42,15 @@ let nav = [
     },
     {
         title : "Gallery",
-        link: "#about"
+        link: "#gallery"
     },
     {
         title : "Profile",
-        link: "#cast"
+        link: "profile.html"
     },
     {
         title : "Login",
-        link: "#merchsec"
+        link: "login.html"
     },
 ]
 
@@ -251,6 +251,15 @@ let conp = document.querySelector(".conp")
 
 conp.innerHTML += `Have questions about online security? We're here to help.`
 
+let namelabel = document.getElementById("namelabel");
+namelabel.innerHTML += `Name`;
+
+let emaillabel = document.getElementById("emaillabel");
+emaillabel.innerHTML += `Email`;
+
+let messagelabel = document.getElementById("messagelabel");
+messagelabel.innerHTML += `Message`;
+
 
 // RANDOM HERO IMAGE ELEMENT
 
@@ -263,3 +272,9 @@ conp.innerHTML += `Have questions about online security? We're here to help.`
 
   let randomimg = Math.floor(Math.random() * images.length);
   document.getElementById("heroImage").src = images[randomimg];
+
+
+//   FOOTER TEXT
+
+let footertxt = document.querySelector(".footertxt")
+footertxt.innerHTML += `© 2024 SecureAware Campaign. All rights reserved. <br> Protecting your data, one step at a time.`
