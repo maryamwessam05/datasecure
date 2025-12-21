@@ -177,8 +177,8 @@ Read More
 `
 
 function toggleReadMore() {
-    const text = document.querySelector(".text");
-    const btn = document.querySelector(".readmore");
+    let text = document.querySelector(".text");
+    let btn = document.querySelector(".readmore");
 
     text.classList.toggle("expanded");
 
