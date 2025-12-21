@@ -1,7 +1,14 @@
+
+// TOGGLE MODE DARK AND LIGHT
+
+
 document.querySelector(".mode").addEventListener("click" , ()  => {
     document.body.classList.toggle("lightmode")
 })
 
+
+
+// SCROLL TO TOP FUNCTION
   let upbtn = document.querySelector(".upbtn");
 
   upbtn.addEventListener("click", () => {
@@ -10,6 +17,24 @@ document.querySelector(".mode").addEventListener("click" , ()  => {
       behavior: "smooth"
     });
   });
+
+
+
+//   PRELOADER
+  let pretxt = document.getElementById("preloadertext");
+  pretxt.innerHTML += `SecureAware`
+
+window.addEventListener("load", () => {
+    setTimeout(() => {
+      document.getElementById("preloader").style.opacity = "0";
+      document.getElementById("preloader").style.transform = "scale(0)";
+    }, 3000);
+  });
+
+
+//   NAVBAR
+
+  document.getElementById("")
 let nav = [
     {
         title : "Home",
@@ -43,6 +68,8 @@ for (let i = 0; i < nav.length; i++) {
 }
 
 
+// HERO SECTION
+
 let herotxt = document.querySelector(".herotxt")
 
 herotxt.innerHTML +=`
@@ -52,6 +79,8 @@ herotxt.innerHTML +=`
 
 `
 
+
+// STATS CARDS ARRAY
 
 let statsCards = [
     {
@@ -83,6 +112,9 @@ for (let i = 0; i < statsCards.length; i++) {
         </div>
     `;
 }
+
+
+// SECTION 3 AND TIPS
 
 let sec3tit = document.getElementById("sec3title");
 
@@ -121,6 +153,9 @@ for (let i = 0; i < tipsCards.length; i++) {
     `;
 }
 
+
+// SEC4 TEXT
+
 let partext = document.querySelector(".text");
 
 partext.innerHTML += `
@@ -131,6 +166,9 @@ let sec4tit = document.querySelector(".sec4tit");
 sec4tit.innerHTML += `
 Security Awareness Gallery
 `
+
+
+// READ MORE OR LESS FUNCTION
 
 let readmore = document.querySelector(".readmore");
 
@@ -151,6 +189,8 @@ function toggleReadMore() {
     }
 }
 
+
+// GALLERY FUNCTION
 
 let galleryItems = [
     { 
@@ -199,6 +239,9 @@ closeBtn.addEventListener("click", () => {
     lightbox.classList.add("hidden");
 });
 
+
+
+// CONTACT US TEXT
 
 let contit = document.querySelector(".contit")
 
