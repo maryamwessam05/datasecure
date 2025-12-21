@@ -45,7 +45,7 @@
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    height: 3223.477px;
+    height: 3400px;
     
 
 }
@@ -477,4 +477,103 @@ line-height: 27px; /* 150% */
     width: 1000px;
     
     border-radius: 8px;
+}
+
+.sec5{
+    display: flex;
+padding: 56px 353px;
+flex-direction: column;
+align-items: center;
+gap: 26px;
+justify-content: center;
+}
+
+.contit{
+    color: var(--headlines, #FFF);
+text-align: center;
+
+font-family: Poppins;
+font-size: 40px;
+font-style: normal;
+font-weight: 400;
+line-height: 60px; /* 150% */
+}
+
+.conp{
+    color: #A8A8A8;
+text-align: center;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 150% */
+}
+
+.sec5 form{
+    display: flex;
+width: 672px;
+height: 532.8px;
+padding: 32.8px 32.8px 0.8px 32.8px;
+flex-direction: column;
+align-items: flex-start;
+gap: 24px;
+border-radius: 14px;
+border: 0.8px solid rgba(255, 255, 255, 0.10);
+background: var(--glassdark, rgba(255, 255, 255, 0.05));
+box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.10), 0 1px 2px -1px rgba(0, 0, 0, 0.10);
+backdrop-filter: blur(2px);
+}
+
+.sec5 label{
+color: var(--logintxt, #F9F8F5);
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 150% */
+}
+
+.contactinput1 , .contactinput2{
+    display: flex;
+width: 606.4px;
+height: 49.6px;
+padding: 12px 16px 12px 44px;
+align-items: center;
+border-radius: 10px;
+border: 0;
+background: var(--input, #FFF);
+}
+
+.contactinput1{
+    background-image: url(img/Icon1.svg);
+    background-repeat: no-repeat;
+    background-position: 12px center;
+     background-size: 20px 20px;
+}
+
+.contactinput2{
+    background-image: url(img/Icon2.svg);
+    background-repeat: no-repeat;
+    background-position: 12px center;
+     background-size: 20px 20px;
+}
+
+
+.contactinputtxt{
+    display: flex;
+width: 606.4px;
+height: 145.6px;
+padding: 12px 16px 12px 44px;
+align-items: flex-start;
+border-radius: 10px;
+background: var(--input, #FFF) url(img/Icon3.svg) no-repeat 12px 12px / 20px 20px;
+
+}
+
+.contactinput1:focus,
+.contactinput2:focus,
+.contactinputtxt:focus {
+    outline: none; 
+    border: 2px solid var(--logingreen); 
+    box-shadow: 0 10px 15px -3px hwb(166 12% 32% / 0.56);
 }

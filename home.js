@@ -188,4 +188,10 @@ closeBtn.addEventListener("click", () => {
 });
 
 
+let contit = document.querySelector(".contit")
 
+contit.innerHTML += `Contact Us`;
+
+let conp = document.querySelector(".conp")
+
+conp.innerHTML += `Have questions about online security? We're here to help.`
