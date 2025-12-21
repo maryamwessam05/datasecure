@@ -260,6 +260,9 @@ emaillabel.innerHTML += `Email`;
 let messagelabel = document.getElementById("messagelabel");
 messagelabel.innerHTML += `Message`;
 
+let submit = document.getElementById("submit");
+messagelabel.innerHTML += `Submit`;
+
 
 // RANDOM HERO IMAGE ELEMENT
 
@@ -278,3 +281,6 @@ messagelabel.innerHTML += `Message`;
 
 let footertxt = document.querySelector(".footertxt")
 footertxt.innerHTML += `© 2024 SecureAware Campaign. All rights reserved. <br> Protecting your data, one step at a time.`
+
+
+// IMAGE SLIDER
