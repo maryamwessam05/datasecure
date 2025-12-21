@@ -1,3 +1,15 @@
+document.querySelector(".mode").addEventListener("click" , ()  => {
+    document.body.classList.toggle("lightmode")
+})
+
+  let upbtn = document.querySelector(".upbtn");
+
+  upbtn.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
 let nav = [
     {
         title : "Home",
