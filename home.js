@@ -250,3 +250,16 @@ contit.innerHTML += `Contact Us`;
 let conp = document.querySelector(".conp")
 
 conp.innerHTML += `Have questions about online security? We're here to help.`
+
+
+// RANDOM HERO IMAGE ELEMENT
+
+ let images = [
+    "img/Container.png",
+    "img/Container2.png",
+    "img/Container3.png",
+    "img/Container4.png"
+  ];
+
+  let randomimg = Math.floor(Math.random() * images.length);
+  document.getElementById("heroImage").src = images[randomimg];
