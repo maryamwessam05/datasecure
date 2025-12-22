@@ -230,6 +230,7 @@ height: 328.881px;
 padding: 73px 75px;
 align-items: center;
 gap: 40px;
+height: 60vh;
 justify-content: center;
 }
 
@@ -407,7 +408,7 @@ width: 607px;
 
 
 .text {
-    max-height: 80px;       
+    max-height: 50px;       
     overflow: hidden;
     transition: max-height 0.4s ease;
 }

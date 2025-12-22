@@ -1,6 +1,4 @@
-// ------------------------
 // LOCALIZATION TEXTS
-// ------------------------
 const texts = {
   en: {
     nav: [
@@ -80,9 +78,7 @@ const texts = {
 
 let currentLang = "en";
 
-// ------------------------
-// HELPER FUNCTIONS
-// ------------------------
+
 function updateTexts() {
   const t = texts[currentLang];
 
@@ -181,9 +177,8 @@ function renderStatsAndTips() {
   }
 }
 
-// ------------------------
 // DARK/LIGHT MODE TOGGLE
-// ------------------------
+
 const modeBtn = document.querySelector(".mode");
 if (modeBtn) {
   modeBtn.addEventListener("click", () => {
@@ -191,9 +186,8 @@ if (modeBtn) {
   });
 }
 
-// ------------------------
 // SCROLL TO TOP
-// ------------------------
+
 const upbtn = document.querySelector(".upbtn");
 if (upbtn) {
   upbtn.addEventListener("click", () => {
@@ -201,9 +195,8 @@ if (upbtn) {
   });
 }
 
-// ------------------------
 // PRELOADER
-// ------------------------
+
 const pretxt = document.getElementById("preloadertext");
 if (pretxt) pretxt.textContent = "SecureAware";
 
@@ -215,21 +208,19 @@ window.addEventListener("load", () => {
       pre.style.transform = "scale(0)";
       pre.style.pointerEvents = "none";
     }
-  }, 500);
+  }, 2000);
 });
 
-// ------------------------
 // HERO RANDOM IMAGE
-// ------------------------
+
 const heroImages = ["img/Container.png", "img/Container2.png", "img/Container3.png", "img/Container4.png"];
 const heroImage = document.getElementById("heroImage");
 if (heroImage) {
   heroImage.src = heroImages[Math.floor(Math.random() * heroImages.length)];
 }
 
-// ------------------------
 // READ MORE / LESS
-// ------------------------
+
 function toggleReadMore() {
   const text = document.querySelector(".text");
   const btn = document.querySelector(".readmore");
@@ -245,9 +236,9 @@ if (readMoreBtn) {
   readMoreBtn.addEventListener("click", toggleReadMore);
 }
 
-// ------------------------
+
 // CONTACT FORM
-// ------------------------
+
 const form = document.querySelector(".sec5 form");
 const nameInput = document.querySelector(".contactinput1");
 const emailInput = document.querySelector(".contactinput2");
@@ -305,9 +296,9 @@ if (form) {
   });
 }
 
-// ------------------------
+
 // GALLERY / LIGHTBOX
-// ------------------------
+
 const galleryItems = [
   { img: "img/image 2.png" },
   { img: "img/image 3.png" },
@@ -350,9 +341,8 @@ if (closeBtn && lightbox) {
   closeBtn.addEventListener("click", () => lightbox.classList.add("hidden"));
 }
 
-// ------------------------
 // LANGUAGE TOGGLE
-// ------------------------
+
 const langBtn = document.querySelector(".lang");
 if (langBtn) {
   langBtn.addEventListener("click", () => {
@@ -364,9 +354,9 @@ if (langBtn) {
   });
 }
 
-// ------------------------
+
 // INITIAL RENDER
-// ------------------------
+
 updateTexts();
 renderStatsAndTips();
 renderNavbar();
